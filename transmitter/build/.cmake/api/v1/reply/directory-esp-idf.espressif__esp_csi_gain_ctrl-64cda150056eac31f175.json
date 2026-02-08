@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/espressif__esp_csi_gain_ctrl",
+		"source" : "managed_components/espressif__esp_csi_gain_ctrl"
+	}
+}
