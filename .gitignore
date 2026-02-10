@@ -1,0 +1,15 @@
+# ESP-IDF specific ignores
+/build/
+/managed_components/
+sdkconfig
+sdkconfig.old
+*.bin
+*.elf
+*.map
+*.hex
+
+# Python specific ignores
+__pycache__/
+*.pyc
+/data/
+/log/
