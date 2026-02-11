@@ -197,6 +197,35 @@ The script reads your recorded CSVs and extracts statistical features (Entropy, 
 
 ---
 
+## 🔄 The Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ ESP32 Device (app_main.c)                                   │
+├─────────────────────────────────────────────────────────────┤
+│ 1. Receives WiFi packets → CSI captured                      │
+│ 2. esp_radar library processes CSI                           │
+│    - Decodes complex numbers                                 │
+│    - Calculates waveform_wander & waveform_jitter            │
+│ 3. Sends RADAR_DATA output via UART/Serial:                  │
+│    "RADAR_DADA,seq,timestamp,wander,threshold..."           │
+│ 4. Also sends CSI_DATA (raw waveform)                        │
+└─────────────────────────────────────────────────────────────┘
+                          ↓ Serial Data
+┌─────────────────────────────────────────────────────────────┐
+│ Python GUI (esp_csi_tool_mod.py)                             │
+├─────────────────────────────────────────────────────────────┤
+│ 1. RECEIVES & PARSES the data from ESP32                     │
+│ 2. csi_data_handle(): Extracts amplitude from raw data       │
+│    - Does NOT recalculate wander/jitter                      │
+│    - Just visualizes the waveform                            │
+│ 3. radar_data_handle(): Displays metrics already calculated  │
+│    by ESP32                                                  │
+│ 4. Shows graphs, tables, statistics                          │
+└─────────────────────────────────────────────────────────────┘
+```
+---
+
 ## ⚙️ Technical Implementation & Modifications
 
 This project is built upon the foundational examples provided by the [XIAO ESP-CSI](https://www.google.com/search?q=https://github.com/limengdu/XIAO_esp-csi) and Espressif CSI repositories. However, significant modifications were made to adapt the generic "radar" console test into a dedicated Fall Detection System.
