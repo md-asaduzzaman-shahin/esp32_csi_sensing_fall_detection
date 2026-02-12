@@ -11,18 +11,16 @@ This repository contains the source code and tools to turn two standard ESP32 mi
 
 ## 📖 Table of Contents
 
-* [Overview](https://www.google.com/search?q=%23-overview)
-* [Hardware Setup](https://www.google.com/search?q=%23-hardware-setup)
-* [Software Requirements](https://www.google.com/search?q=%23-software-requirements)
-* [Project Structure](https://www.google.com/search?q=%23-project-structure)
-* [Installation & Setup](https://www.google.com/search?q=%23-installation--setup)
-* [1. Flash the Transmitter (TX)](https://www.google.com/search?q=%231-flash-the-transmitter-tx)
-* [2. Flash the Receiver (RX)](https://www.google.com/search?q=%232-flash-the-receiver-rx)
-* [3. Run the Python Application](https://www.google.com/search?q=%233-run-the-python-application)
-
-
-* [Usage Guide](https://www.google.com/search?q=%23-usage-guide)
-* [Troubleshooting](https://www.google.com/search?q=%23-troubleshooting)
+* [Overview](#overview)
+* [Hardware Setup](#hardware-setup)
+* [Software Requirements](#software-requirements)
+* [Project Structure](#project-structure)
+* [Installation & Setup](#installation--setup)
+    * [1. Flash the Transmitter (TX)](#1-flash-the-transmitter-tx)
+    * [2. Flash the Receiver (RX)](#2-flash-the-receiver-rx)
+    * [3. Run the Python Application](#3-run-the-python-application)
+* [Usage Guide](#usage-guide)
+* [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -203,25 +201,25 @@ The script reads your recorded CSVs and extracts statistical features (Entropy, 
 ┌─────────────────────────────────────────────────────────────┐
 │ ESP32 Device (app_main.c)                                   │
 ├─────────────────────────────────────────────────────────────┤
-│ 1. Receives WiFi packets → CSI captured                      │
-│ 2. esp_radar library processes CSI                           │
-│    - Decodes complex numbers                                 │
-│    - Calculates waveform_wander & waveform_jitter            │
-│ 3. Sends RADAR_DATA output via UART/Serial:                  │
+│ 1. Receives WiFi packets → CSI captured                     │
+│ 2. esp_radar library processes CSI                          │
+│    - Decodes complex numbers                                │
+│    - Calculates waveform_wander & waveform_jitter           │
+│ 3. Sends RADAR_DATA output via UART/Serial:                 │
 │    "RADAR_DADA,seq,timestamp,wander,threshold..."           │
-│ 4. Also sends CSI_DATA (raw waveform)                        │
+│ 4. Also sends CSI_DATA (raw waveform)                       │
 └─────────────────────────────────────────────────────────────┘
                           ↓ Serial Data
 ┌─────────────────────────────────────────────────────────────┐
-│ Python GUI (esp_csi_tool_mod.py)                             │
+│ Python GUI (esp_csi_tool_mod.py)                            │
 ├─────────────────────────────────────────────────────────────┤
-│ 1. RECEIVES & PARSES the data from ESP32                     │
-│ 2. csi_data_handle(): Extracts amplitude from raw data       │
-│    - Does NOT recalculate wander/jitter                      │
-│    - Just visualizes the waveform                            │
-│ 3. radar_data_handle(): Displays metrics already calculated  │
-│    by ESP32                                                  │
-│ 4. Shows graphs, tables, statistics                          │
+│ 1. RECEIVES & PARSES the data from ESP32                    │
+│ 2. csi_data_handle(): Extracts amplitude from raw data      │
+│    - Does NOT recalculate wander/jitter                     │
+│    - Just visualizes the waveform                           │
+│ 3. radar_data_handle(): Displays metrics already calculated │
+│    by ESP32                                                 │
+│ 4. Shows graphs, tables, statistics                         │
 └─────────────────────────────────────────────────────────────┘
 ```
 ---

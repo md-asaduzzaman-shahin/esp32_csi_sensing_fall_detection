@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader/esp-idf/cmake_install.cmake")
+  include("C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

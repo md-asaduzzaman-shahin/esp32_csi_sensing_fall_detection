@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\Shahin\WorkThings\WorksNPractices\projects\wifi_sensing_csi\XIAO_esp-csi-master2\examples\room_presence_detection\send_TX\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\Shahin\WorkThings\WorksNPractices\projects\wifi_sensing_csi\XIAO_esp-csi-master2\examples\esp-radar\console_test\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

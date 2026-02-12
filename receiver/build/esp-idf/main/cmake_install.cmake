@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/main
+# Install script for directory: C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/csi_send")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/console_test")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

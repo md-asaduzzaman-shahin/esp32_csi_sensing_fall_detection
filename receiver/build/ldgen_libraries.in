@@ -157,4 +157,13 @@ $<TARGET_FILE:idf::rt>
 $<TARGET_FILE:idf::spiffs>
 $<TARGET_FILE:idf::wifi_provisioning>
 $<TARGET_FILE:__idf_json>
+$<TARGET_FILE:idf::espressif__esp-radar>
+$<TARGET_FILE:idf::espressif__led_strip>
 $<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_espressif__esp-radar>
+$<TARGET_FILE:__idf_espressif__led_strip>
+$<TARGET_FILE:idf::cmd_nvs>
+$<TARGET_FILE:idf::cmd_system>
+$<TARGET_FILE:idf::cmd_wifi>
+$<TARGET_FILE:idf::commands>
+$<TARGET_FILE:__idf_fatfs>

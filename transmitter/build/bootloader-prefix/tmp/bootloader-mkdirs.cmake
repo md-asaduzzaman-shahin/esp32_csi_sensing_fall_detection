@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.5.2/components/bootloader/subp
   file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.5.2/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader"
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix"
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/tmp"
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/src"
-  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/tmp"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/src"
+  "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

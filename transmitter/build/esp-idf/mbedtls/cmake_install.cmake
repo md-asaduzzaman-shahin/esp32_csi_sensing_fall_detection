@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/console_test")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/csi_send")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 

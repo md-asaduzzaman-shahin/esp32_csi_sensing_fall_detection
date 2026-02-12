@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/room_presence_detection/send_TX/build/bootloader/bootloader.elf
+file C:/Users/Shahin/WorkThings/WorksNPractices/projects/wifi_sensing_csi/XIAO_esp-csi-master2/examples/esp-radar/console_test/build/bootloader/bootloader.elf
